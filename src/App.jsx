@@ -5,7 +5,7 @@ import Biblia from "./Pages/Biblia";
 import { Diversos } from "./Pages/Diversos";
 import Hinario from "./Pages/Hinario";
 import Home from "./Pages/Home";
-import Relatorio from "./Pages/Relatorio";
+import Relatorio from "./Pages/HinarioMusica";
 import Veu from "./Pages/Veu";
 import GlobalStyle from "./styles/GlobalStyle";
 
@@ -16,8 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/veu" element={<Veu/>}/>
-        <Route path="/hinario" element={<Hinario/>}/>
-        <Route path="/relatorio" element={<Relatorio/>}/>
+        <Route path="/hinariocanto" element={<Hinario/>}/>
+        <Route path="/hinariomusica" element={<Relatorio/>}/>
         <Route path="/diversos" element={<Diversos/>}/>
         <Route path="/biblia" element={<Biblia/>}/>
       </Routes>
