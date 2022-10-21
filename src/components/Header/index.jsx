@@ -1,26 +1,49 @@
-import {Container,DivTitle,Title,ListCategory,Links,Category} from './styles'
-import {Link} from 'react-router-dom'
+import {
+  Container,
+  DivImg,
+  ImageLogo,
+  DivTitle,
+  Title,
+  ListCategory,
+  Links,
+  Category,
+} from "./styles";
+import { Link } from "react-router-dom";
+import Image from "../../assets/Logo_oficial.png";
 
 function Header() {
-  return ( 
+  return (
     <Container>
-       <DivTitle>
-     
+      <ListCategory>
+        <Link to="/">
+          <Category>Pagina Inicial</Category>
+        </Link>
+        <Link to="/veu">
+          <Category>Veu</Category>
+        </Link>
+        <Link to="/hinariocanto">
+          <Category>Hinario de Canto</Category>
+        </Link>
+        <Link to="/biblia">
+          <Category>Bliblia</Category>
+        </Link>
+        <Link to="/hinariomusica">
+          <Category>Hinario de Musica</Category>
+        </Link>
+        <Link to="/diversos">
+          <Category>Diversos</Category>
+        </Link>
+      </ListCategory>
+      <DivTitle>
         <Title>Fundo Biblico</Title>
-     
-       </DivTitle>
-     
-       <ListCategory>
-       
-        <Link to="/veu" ><Category>Veu</Category></Link>
-        <Link to="/hinariocanto"><Category>Hinario de Canto</Category></Link>
-        <Link to="/biblia"><Category>Bliblia</Category></Link>
-        <Link to="/hinariomusica"><Category>Hinario de Musica</Category></Link>
-        <Link to="/diversos"><Category>Diversos</Category></Link>
-      
-       </ListCategory>
+        <DivImg>
+          <Link to="/">
+            <ImageLogo src={Image} />
+          </Link>
+        </DivImg>
+      </DivTitle>
     </Container>
-   );
+  );
 }
 
 export default Header;
