@@ -12,7 +12,7 @@ function Header() {
      
        <ListCategory>
        
-        <Link to="/veu"><Category>Veu</Category></Link>
+        <Link to="/veu" ><Category>Veu</Category></Link>
         <Link to="/hinariocanto"><Category>Hinario de Canto</Category></Link>
         <Link to="/biblia"><Category>Bliblia</Category></Link>
         <Link to="/hinariomusica"><Category>Hinario de Musica</Category></Link>

@@ -1,4 +1,5 @@
-import {Article,DivImage,Image,DivItem,Text,Small,DivCta,Reference} from './styles'
+import {Article,Container,List,DivImage,Image,DivItem,Text,Small,DivCta,Reference} from './styles'
+import IMG1 from '../../assets/franca.png'
 
 function Relatorio() {
   const data = [
@@ -6,56 +7,56 @@ function Relatorio() {
       id: 1,
       title: "Hinario de Musica 1",
       description: "R$00.01",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 2,
       title: "Hinario de Musica 2",
       description: "R$00.02",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 3,
       title: "Hinario de Musica 3",
       description: "R$00.03",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 4,
       title: "Hinario de Musica 4",
       description: "R$00.04",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 5,
       title: "Hinario de Musica 5",
       description: "R$00.05",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 6,
       title: "Hinario de Musica 6",
       description: "R$00.06",
-      imageURL: ""
+      image: IMG1
     },
     {
       id: 7,
       title: "Hinario de Musica 7",
       description: "R$00.07",
-      imageURL: ""
+      image: IMG1
     },
     {
       id: 8,
       title: "Hinario de Musica 8",
       description: "R$00.08",
-      imageURL: ""
+      image: IMG1
     },
   ];
 
   const numberList =  data.length ;
   return ( 
-    <div>
-    <ul>
+    <Container>
+    <List>
 {data
           .slice(0, numberList)
           .map(({ id, image, title, description, github, demo }) => {
@@ -81,8 +82,8 @@ function Relatorio() {
             );
           })}
    
-    </ul>
-  </div>
+    </List>
+  </Container>
    );
 }
 

@@ -1,5 +1,6 @@
 
-import { Article,DivImage,Image,DivItem,Text,Small,DivCta,Reference} from './styles';
+import { Container,List,Article,DivImage,Image,DivItem,Text,Small,DivCta,Reference} from './styles';
+import IMG1 from '../../assets/franca.png'
 
 export function Diversos() {
 
@@ -8,56 +9,56 @@ export function Diversos() {
       id: 1,
       title: "Diversos 1",
       description: "R$00.01",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 2,
       title: "Diversos 2",
       description: "R$00.02",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 3,
       title: "Diversos 3",
       description: "R$00.03",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 4,
       title: "Diversos 4",
       description: "R$00.04",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 5,
       title: "Diversos 5",
       description: "R$00.05",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 6,
       title: "Diversos 6",
       description: "R$00.06",
-      imageURL: ""
+      image: IMG1
     },
     {
       id: 7,
       title: "Diversos 7",
       description: "R$00.07",
-      imageURL: ""
+      image: IMG1
     },
     {
       id: 8,
       title: "Diversos 8",
       description: "R$00.08",
-      imageURL: ""
+      image: IMG1
     },
   ];
 
   const numberList =  data.length ;
   return (
-    <div>
-    <ul>
+    <Container>
+    <List>
 {data
           .slice(0, numberList)
           .map(({ id, image, title, description, github, demo }) => {
@@ -83,7 +84,7 @@ export function Diversos() {
             );
           })}
    
-    </ul>
-  </div>
+    </List>
+  </Container>
   );
 }

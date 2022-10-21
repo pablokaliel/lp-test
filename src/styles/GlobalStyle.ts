@@ -8,8 +8,8 @@ export default createGlobalStyle`
         font-family: "Poppins"
     }
     html,#root,body,.App{
-        background: #19181F;
-        color:#dae4f3;
+        background: #e5e8ec;
+        color:#0303;
        
         width:100%;
         height:100vh;

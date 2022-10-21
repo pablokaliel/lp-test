@@ -1,65 +1,66 @@
-import {Article,DivImage,Image,DivItem,Text,Small,DivCta,Reference} from './styles'
-
+import {Container,List,Article,DivImage,Image,DivItem,Text,Small,DivCta,Reference} from './styles'
+import IMG1 from '../../assets/franca.png'
 function Veu() {
    const data = [
     {
       id: 1,
       title: "Véu 1",
       description: "R$00.01",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 2,
       title: "Véu 2",
       description: "R$00.02",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 3,
       title: "Véu 3",
       description: "R$00.03",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 4,
       title: "Véu 4",
       description: "R$00.04",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 5,
       title: "Véu 5",
       description: "R$00.05",
-      imageURL: "",
+      image: IMG1
     },
     {
       id: 6,
       title: "Véu 6",
       description: "R$00.06",
-      imageURL: ""
+      image: IMG1
     },
     {
       id: 7,
       title: "Véu 7",
       description: "R$00.07",
-      imageURL: ""
+      image: IMG1
     },
     {
       id: 8,
       title: "Véu 8",
       description: "R$00.08",
-      imageURL: ""
+      image: IMG1
     },
   ];
 
   const numberList =  data.length ;
   return ( 
-    <div>
-    <ul>
+    <Container>
+    <List>
 {data
           .slice(0, numberList)
           .map(({ id, image, title, description, github, demo }) => {
             return (
+              
               <Article className="portfolio_item" key={id}>
                 <DivImage className="portfolio_item-image">
                   <Image src={image} alt={title} loading="lazy" />
@@ -67,22 +68,14 @@ function Veu() {
                 <DivItem className="portfolio_item-text">
                   <Text>{title}</Text>
                   <Small>{description}</Small>
-                  <DivCta className="portfolio_item-cta">
-                    {github ? (
-                      <Reference href={github} className="btn" target="_blank">
-                        Github
-                      </Reference>
-                    ) : (
-                      ""
-                    )}
-                  </DivCta>
                 </DivItem>
               </Article>
+              
             );
           })}
    
-    </ul>
-  </div>
+    </List>
+  </Container>
    );
 }
 

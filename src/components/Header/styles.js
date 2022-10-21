@@ -5,25 +5,29 @@ display:flex;
 align-items:center;
 justify-content:center;
 flex-direction:column;
+padding:20px 0px;
+
 `;
 
 
 export const DivTitle = styled.div`
 padding: 5px 0px;
+
 `;
 export const Title = styled.h1`
-
+color:#030303;
 `;
 export const Links = styled.a`
-
+text-decoration:none;
 `;
 export const ListCategory = styled.ul`
+
 list-style:none;
 display:flex;
 justify-content:space-between;
 width:80%;
-padding: 10px;
-background: #32303a;
+padding: 15px;
+background: #345574;
 border-radius:4px;
 
 
@@ -31,6 +35,7 @@ border-radius:4px;
   width:100%;
   font-size:15px;
   padding:10px 0px;
+  height:150px;
   
   flex-wrap:wrap;
   align-items:center;
