@@ -16,6 +16,16 @@ export const Title = styled.h1`
   margin-top:10px;
   
 `;
-export const Description = styled.span`
+export const SubTitle = styled.h3`
   color:#030303;
+  margin-bottom:20px;
+  
+`;
+export const Description = styled.span`
+color:#030303;
+`;
+export const SubDescription = styled.span`
+  color:#030303;
+  font-weight:bold;
+  margin-top:5px;
 `;

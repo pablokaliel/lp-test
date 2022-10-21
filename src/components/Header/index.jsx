@@ -19,16 +19,16 @@ function Header() {
           <Category>Pagina Inicial</Category>
         </Link>
         <Link to="/veu">
-          <Category>Veu</Category>
+          <Category>Véus</Category>
         </Link>
         <Link to="/hinariocanto">
-          <Category>Hinario de Canto</Category>
+          <Category>Hinários de Canto</Category>
         </Link>
         <Link to="/biblia">
-          <Category>Bliblia</Category>
+          <Category>Bíblias</Category>
         </Link>
         <Link to="/hinariomusica">
-          <Category>Hinario de Musica</Category>
+          <Category>Hinários de Musica</Category>
         </Link>
         <Link to="/diversos">
           <Category>Diversos</Category>
