@@ -70,7 +70,7 @@ function Relatorio() {
   return (
     <Container>
       <DivTitle>
-        <Title>Estes são nossos Hinários para música disponíveis:</Title>
+        <Title>Hinários para música disponíveis:</Title>
       </DivTitle>
       <List>
         {data

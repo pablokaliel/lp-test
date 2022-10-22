@@ -70,7 +70,7 @@ export function Diversos() {
   return (
     <Container>
        <DivTitle>
-        <Title>Estes são nossos Itens em diversos disponíveis:</Title>
+        <Title>Itens em diversos disponíveis:</Title>
       </DivTitle>
       <List>
         {data

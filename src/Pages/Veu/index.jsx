@@ -69,7 +69,7 @@ function Veu() {
   return (
     <Container>
       <DivTitle>
-        <Title>Estes são nossos Véus disponiveis:</Title>
+        <Title>Véus disponiveis:</Title>
       </DivTitle>
       <List>
         {data

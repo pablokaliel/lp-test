@@ -71,7 +71,7 @@ function Hinario() {
   return (
     <Container>
        <DivTitle>
-        <Title>Estes são nossos hinários para Canto disponíveis:</Title>
+        <Title>Hinários para Canto disponíveis:</Title>
       </DivTitle>
       <List>
         {data
