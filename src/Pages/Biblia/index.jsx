@@ -68,7 +68,7 @@ function Biblia() {
   return (
     <Container>
        <DivTitle>
-        <Title>Estas são nossas Bíblias disponíveis:</Title>
+        <Title>Bíblias disponíveis:</Title>
       </DivTitle>
       <List>
         {data

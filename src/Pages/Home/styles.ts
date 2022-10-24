@@ -14,6 +14,7 @@ export const Title = styled.h1`
   color:#030303;
   margin-bottom:20px;
   margin-top:10px;
+  font-size:25px;
   
 `;
 export const SubTitle = styled.h3`
