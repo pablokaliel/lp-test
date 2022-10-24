@@ -23,11 +23,11 @@ function Header() {
         <Link to="/hinariocanto">
           <Category>Hinários de Canto</Category>
         </Link>
-        <Link to="/biblia">
-          <Category>Bíblias</Category>
-        </Link>
         <Link to="/hinariomusica">
           <Category>Hinários de Musica</Category>
+        </Link>
+        <Link to="/biblia">
+          <Category>Bíblias</Category>
         </Link>
         <Link to="/diversos">
           <Category>Diversos</Category>
