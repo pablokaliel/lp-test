@@ -7,8 +7,6 @@ import {
   DivItem,
   Text,
   Small,
-  DivCta,
-  Reference,
   DivTitle,
   Title
 } from "./styles";
@@ -75,7 +73,7 @@ function Relatorio() {
       <List>
         {data
           .slice(0, numberList)
-          .map(({ id, image, title, description, github, demo }) => {
+          .map(({ id, image, title, description, }) => {
             return (
               <Article className="portfolio_item" key={id}>
                 <DivImage className="portfolio_item-image">
@@ -84,15 +82,6 @@ function Relatorio() {
                 <DivItem className="portfolio_item-text">
                   <Text>{title}</Text>
                   <Small>{description}</Small>
-                  <DivCta className="portfolio_item-cta">
-                    {github ? (
-                      <Reference href={github} className="btn" target="_blank">
-                        Github
-                      </Reference>
-                    ) : (
-                      ""
-                    )}
-                  </DivCta>
                 </DivItem>
               </Article>
             );

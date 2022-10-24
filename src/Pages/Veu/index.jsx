@@ -7,8 +7,6 @@ import {
   DivItem,
   Text,
   Small,
-  DivCta,
-  Reference,
   DivTitle,
   Title
 } from "./styles";
@@ -74,7 +72,7 @@ function Veu() {
       <List>
         {data
           .slice(0, numberList)
-          .map(({ id, image, title, description, github, demo }) => {
+          .map(({ id, image, title, description,}) => {
             return (
               <Article className="portfolio_item" key={id}>
                 <DivImage className="portfolio_item-image">

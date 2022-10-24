@@ -5,7 +5,6 @@ import {
   DivTitle,
   Title,
   ListCategory,
-  Links,
   Category,
 } from "./styles";
 import { Link } from "react-router-dom";
