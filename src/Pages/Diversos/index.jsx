@@ -8,7 +8,7 @@ import {
   Text,
   Small,
   DivTitle,
-  Title
+  Title,
 } from "./styles";
 
 import IMG1 from "../../assets/franca.png";
@@ -68,25 +68,23 @@ export function Diversos() {
   const numberList = data.length;
   return (
     <Container>
-       <DivTitle>
+      <DivTitle>
         <Title>Itens em diversos disponíveis:</Title>
       </DivTitle>
       <List>
-        {data
-          .slice(0, numberList)
-          .map(({ id, image, title, description,}) => {
-            return (
-              <Article className="portfolio_item" key={id}>
-                <DivImage className="portfolio_item-image">
-                  <Image src={image} alt={title} loading="lazy" />
-                </DivImage>
-                <DivItem className="portfolio_item-text">
-                  <Text>{title}</Text>
-                  <Small>{description}</Small>
-                </DivItem>
-              </Article>
-            );
-          })}
+        {data.slice(0, numberList).map(({ id, image, title, description }) => {
+          return (
+            <Article key={id}>
+              <DivImage>
+                <Image src={image} alt={title} loading="lazy" />
+              </DivImage>
+              <DivItem>
+                <Text>{title}</Text>
+                <Small>{description}</Small>
+              </DivItem>
+            </Article>
+          );
+        })}
       </List>
     </Container>
   );

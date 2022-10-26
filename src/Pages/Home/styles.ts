@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.section`
   display: flex;
@@ -9,24 +9,23 @@ export const Container = styled.section`
   @media (max-width: 770px) {
     padding: 0px 10px;
   }
-  `;
+`;
 export const Title = styled.h1`
-  color:#030303;
-  margin-bottom:20px;
-  margin-top:10px;
-  font-size:25px;
-  
+  color: #030303;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 25px;
 `;
 export const SubTitle = styled.h3`
-  color:#030303;
-  margin-bottom:20px;
-  
+  color: #030303;
+  margin-bottom: 20px;
 `;
 export const Description = styled.span`
-color:#030303;
+  color: #030303;
 `;
 export const SubDescription = styled.span`
-  color:#030303;
-  font-weight:bold;
-  margin-top:5px;
+  color: #030303;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom:40px;
 `;

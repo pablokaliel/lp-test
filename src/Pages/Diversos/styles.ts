@@ -4,7 +4,7 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction:column;
+  flex-direction: column;
   padding: 0px 80px;
   @media (max-width: 770px) {
     padding: 0px 10px;
@@ -23,11 +23,9 @@ export const DivImage = styled.div`
   width: 300px;
   height: 360px;
 `;
-export const DivTitle = styled.div`
-
-`;
+export const DivTitle = styled.div``;
 export const Title = styled.h2`
-color:#030303;
+  color: #030303;
 `;
 export const Image = styled.img`
   height: 100%;
@@ -44,10 +42,12 @@ export const Text = styled.h2`
 `;
 export const Small = styled.span`
   color: #030303;
-  margin:10px 0px;
+  margin: 10px 0px;
 `;
 export const DivCta = styled.div``;
+
 export const Reference = styled.a``;
+
 export const List = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

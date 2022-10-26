@@ -75,11 +75,11 @@ function Relatorio() {
           .slice(0, numberList)
           .map(({ id, image, title, description, }) => {
             return (
-              <Article className="portfolio_item" key={id}>
-                <DivImage className="portfolio_item-image">
+              <Article key={id}>
+                <DivImage >
                   <Image src={image} alt={title} loading="lazy" />
                 </DivImage>
-                <DivItem className="portfolio_item-text">
+                <DivItem >
                   <Text>{title}</Text>
                   <Small>{description}</Small>
                 </DivItem>
