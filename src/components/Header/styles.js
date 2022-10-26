@@ -28,6 +28,7 @@ export const DivImg = styled.div`
 export const ImageLogo = styled.img`
   width: 100%;
   height: 100%;
+  color:#fff;
 `;
 
 export const Title = styled.h1`
