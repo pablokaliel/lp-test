@@ -15,7 +15,7 @@ function Header() {
     <Container>
       <ListCategory>
         <Link to="/">
-          <Category>Pagina Inicial</Category>
+          <Category>Página Inicial</Category>
         </Link>
         <Link to="/veu">
           <Category>Véus</Category>
@@ -34,7 +34,7 @@ function Header() {
         </Link>
       </ListCategory>
       <DivTitle>
-        <Title>Fundo Biblico</Title>
+        <Title>Fundo Bíblico</Title>
         <DivImg>
           <Link to="/">
             <ImageLogo src={Image} />
