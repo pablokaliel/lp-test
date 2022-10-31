@@ -11,7 +11,7 @@ export default createGlobalStyle`
         list-style:none;
     }
     html,#root,body,.App{
-        background: #e5e8ec;
+        background: #fafcff;
         
         color:#0303;
        
